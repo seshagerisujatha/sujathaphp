@@ -22,7 +22,7 @@ export interface ApiResponse<T = any> {
   providedIn: 'root'
 })
 export class ApiService {
-  private baseUrl = 'http://localhost/leave-management/api'; // Update for production
+  private baseUrl = 'http://0.0.0.0:5000/api'; // Replit PHP server
   
   private httpOptions = {
     headers: new HttpHeaders({

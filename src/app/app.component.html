@@ -1,26 +1,53 @@
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand" routerLink="/dashboard">{{ title }}</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav me-auto">
+<div class="app-container">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="#">Leave Management System</a>
+    
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+          <a class="nav-link" routerLink="/dashboard">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Dashboard</span>
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/employees" routerLinkActive="active">Employees</a>
+          <a class="nav-link" routerLink="/employees">
+            <i class="fa fa-fw fa-users"></i>
+            <span class="nav-link-text">Employees</span>
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/leaves" routerLinkActive="active">Leave Requests</a>
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-building"></i>
+            <span class="nav-link-text">Companies</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-sitemap"></i>
+            <span class="nav-link-text">Departments</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-calendar"></i>
+            <span class="nav-link-text">Leave Requests</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-list"></i>
+            <span class="nav-link-text">Leave Types</span>
+          </a>
         </li>
       </ul>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<div class="container-fluid">
-  <router-outlet></router-outlet>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>

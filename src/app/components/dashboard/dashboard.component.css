@@ -1,25 +1,62 @@
 
+.dashboard {
+  padding: 20px;
+}
+
 .card {
-  border-radius: 10px;
-  transition: transform 0.2s;
+  border: none;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.border-left-primary {
+  border-left: 0.25rem solid #4e73df !important;
 }
 
-.card-footer {
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.1);
+.border-left-success {
+  border-left: 0.25rem solid #1cc88a !important;
 }
 
-.card-footer:hover {
-  color: white;
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.2);
+.border-left-warning {
+  border-left: 0.25rem solid #f6c23e !important;
 }
 
-h4 {
-  font-size: 2rem;
-  font-weight: bold;
+.border-left-info {
+  border-left: 0.25rem solid #36b9cc !important;
+}
+
+.text-primary {
+  color: #4e73df !important;
+}
+
+.text-success {
+  color: #1cc88a !important;
+}
+
+.text-warning {
+  color: #f6c23e !important;
+}
+
+.text-info {
+  color: #36b9cc !important;
+}
+
+.badge-success {
+  background-color: #1cc88a;
+}
+
+.badge-warning {
+  background-color: #f6c23e;
+}
+
+.badge-danger {
+  background-color: #e74a3b;
+}
+
+.table th {
+  background-color: #f8f9fc;
+  border-color: #e3e6f0;
+}
+
+.table td {
+  border-color: #e3e6f0;
 }
