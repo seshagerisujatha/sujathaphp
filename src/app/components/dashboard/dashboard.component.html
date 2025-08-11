@@ -1,0 +1,84 @@
+
+<div class="row">
+  <div class="col-12">
+    <h2>Dashboard</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-3 mb-4">
+    <div class="card bg-primary text-white">
+      <div class="card-body">
+        <div class="d-flex justify-content-between">
+          <div>
+            <h4>{{ totalEmployees }}</h4>
+            <p>Total Employees</p>
+          </div>
+          <div class="align-self-center">
+            <i class="fas fa-users fa-2x"></i>
+          </div>
+        </div>
+      </div>
+      <a routerLink="/employees" class="card-footer text-white">
+        View Details <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="col-md-3 mb-4">
+    <div class="card bg-success text-white">
+      <div class="card-body">
+        <div class="d-flex justify-content-between">
+          <div>
+            <h4>{{ totalLeaves }}</h4>
+            <p>Total Leaves</p>
+          </div>
+          <div class="align-self-center">
+            <i class="fas fa-calendar-alt fa-2x"></i>
+          </div>
+        </div>
+      </div>
+      <a routerLink="/leaves" class="card-footer text-white">
+        View Details <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="col-md-3 mb-4">
+    <div class="card bg-warning text-white">
+      <div class="card-body">
+        <div class="d-flex justify-content-between">
+          <div>
+            <h4>{{ pendingLeaves }}</h4>
+            <p>Pending Leaves</p>
+          </div>
+          <div class="align-self-center">
+            <i class="fas fa-clock fa-2x"></i>
+          </div>
+        </div>
+      </div>
+      <a routerLink="/leaves" class="card-footer text-white">
+        View Details <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="col-md-3 mb-4">
+    <div class="card bg-info text-white">
+      <div class="card-body">
+        <div class="d-flex justify-content-between">
+          <div>
+            <h4>{{ approvedLeaves }}</h4>
+            <p>Approved Leaves</p>
+          </div>
+          <div class="align-self-center">
+            <i class="fas fa-check-circle fa-2x"></i>
+          </div>
+        </div>
+      </div>
+      <a routerLink="/leaves" class="card-footer text-white">
+        View Details <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</div>

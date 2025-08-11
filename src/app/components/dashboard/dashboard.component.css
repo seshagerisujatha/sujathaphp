@@ -1,0 +1,25 @@
+
+.card {
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-footer {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-footer:hover {
+  color: white;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: bold;
+}
