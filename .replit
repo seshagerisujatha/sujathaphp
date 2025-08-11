@@ -8,7 +8,7 @@ channel = "stable-25_05"
 run = ["sh", "-c", "node index.js"]
 
 [workflows]
-runButton = "Start PHP Server"
+runButton = "Start Angular Server"
 
 [[workflows.workflow]]
 name = "Start PHP Server"
@@ -18,3 +18,16 @@ mode = "sequential"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "php -S 0.0.0.0:5000 -t ."
+
+[[workflows.workflow]]
+name = "Start Angular Server"
+author = 46275481
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "ng serve --host 0.0.0.0 --port 4200"
+
+[[ports]]
+localPort = 5000
+externalPort = 80
